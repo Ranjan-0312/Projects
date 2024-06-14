@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(bike.jpg);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: large;
+    font-weight: bold;
+}
+
+nav button{
+    padding: 5px 8px;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+}
+.content{
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 5%;
+    animation: content 2s ease-in-out;
+}
+@keyframes content{
+    0%{
+        opacity: 0;
+        transform: translate(-30%);
+    }
+}
+
+.content h1{
+    font-size: 90px;
+    margin-bottom: 1%;
+}
+.content h3{
+    font-size: 20px;
+    margin-bottom: 2%;
+    font-family: Verdana;
+}
+span{
+    color: blue;
+}
+.content p{
+    font-size: 20px;
+    margin-bottom: 3%;
+    font-family: Verdana;
+}
+
+button{
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: rgba(162, 200, 201, 0.836);
+}
+
+@media screen and (max-width:1200px) {
+    .content{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .content{
+        text-align: center;
+    }
+    .nav{
+        text-align: center;
+    }
+}
